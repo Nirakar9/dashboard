@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { useAuth } from '../../lib/auth-context';
 
+
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const { logout } = useAuth();
@@ -76,9 +77,17 @@ const Dashboard: React.FC = () => {
             </CardContent>
           </Card>
         </div>
+        {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <h2 className="text-xl font-semibold mb-4">Upload Files</h2>
+  <UploadFile />
+</div> */}
+
       </main>
     </div>
   );
 };
 
 export default Dashboard;
+
+
+
